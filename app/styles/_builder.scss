@@ -1,0 +1,360 @@
+.builder-view {
+
+    $charm-size: 90px;
+
+    .tooltips {
+        display: none;
+        //kind of a pointer-events fallback. because that's an annoying polyfill.
+        &.active {
+            display: block;
+        }
+        pointer-events: none;
+        position: absolute;
+        top: 0; left: 0;
+        z-index: $zindex-tooltip;
+        width: 100%;
+        height: 100%;
+    }
+
+    .tooltip {
+            $tool-w: 200px;
+            $tool-border-w: 1px;
+
+            //prevent accidental hover on the tooltip from persisting it
+            pointer-events: none;
+
+            position: absolute;
+            padding: 10px 30px;
+            font-size: 14px;
+            text-align: center;
+            width: $tool-w;
+            border: $tool-border-w solid $ip-blue-lt;
+            background-color: $white;
+
+            .price {
+                display: block;
+                color: $ip-grey;
+            }
+
+            $trisize: 10px;
+            $tri-x: $tool-w/2 - $trisize;
+            $innertri: $trisize - $tool-border-w*2;
+
+            &:before {
+                content: "";
+                position: absolute;
+                bottom: -$trisize;
+                left: $tri-x;
+                border-width: $trisize $trisize 0;
+                border-style: solid;
+                border-color: $ip-blue-lt transparent;
+                display: block;
+                width: 0;
+            }
+
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: -$innertri;
+                left: $tri-x + $tool-border-w*2;
+                border-width: $innertri $innertri 0;
+                border-style: solid;
+                border-color: #fff transparent;
+                display: block;
+                width: 0;
+            }
+
+            $offset: 55px;
+
+            &.offset-right {
+                margin-left: -$tool-w/2 + $offset;
+                &:before {
+                    left: $tri-x - $offset;
+                }
+                &:after {
+                    left: $tri-x + $tool-border-w*2 - $offset;
+                }
+            }
+
+            &.offset-left {
+                margin-left: -$tool-w/2 - $offset;
+                &:before {
+                    left: $tri-x + $offset;
+                }
+                &:after {
+                    left: $tri-x + $tool-border-w*2 + $offset;
+                }
+            }
+        }
+
+
+    .form {
+        width: 100%;
+        height: 775px;  //tall enough for the share screenshot to capture all charms and to push down charms menu
+        text-align: center;
+        position: relative;
+    }
+
+    .form-cont {
+        position: relative;
+        padding-top: 15px;  //so share snapshots can capture charms added to top slots
+
+        .holder-image {
+            position: absolute;
+            width: 180px;
+            height: 180px;
+            left: 50%;
+            margin-left: -90px;
+            bottom: 70px;
+        }
+
+
+        .slot {
+            position: absolute !important;
+        }
+
+        &.necklace .slot,
+        &.bracelet .slot {
+            background-image: url(../images/slot-icon.png);
+            background-repeat: no-repeat;
+            @include opacity(0);
+            @include transition(opacity .15s ease-out);
+            &.active {
+                @include opacity(.5);
+            }
+            &.hovered {
+                background-image: url(../images/slot-icon-hover.png);
+                @include opacity(1);
+            }
+        }
+
+        &.necklace {
+            .slot {
+                width: 50%;
+                height: 100%;
+                &.left {
+                    background-position: 90% 86%;
+                }
+                &.right {
+                    left: 50%;
+                    background-position: 10% 86%;
+                }
+            }
+        }
+
+        &.bracelet {
+            $form-w: 600px;
+            .slots {
+                width: $form-w;
+                //assumes neckalce and bracelet images are all aspect 1:1
+                height: $form-w;
+                position: absolute;
+                left: 50%;
+                margin-left: -$form-w/2;
+            }
+
+            .slot {
+                width: 100px;
+                height: 100px;
+                background-position: 31px 30px;
+                background-color: transparent;
+
+                // For dev
+                // background-color: red;
+                // @include opacity(.3);
+                // For dev
+
+                &.hovered {
+                    background-image: url(../images/slot-icon-hover.png);
+                }
+            }
+        }
+    }
+
+    .charms {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        text-align: left;
+        padding: 0 $page-gutter-x;
+        overflow: hidden;
+    }
+
+    .subcat-menu {
+        position: absolute;
+        top: 0px; left: $page-gutter-x;
+        z-index: $zindex-dropdown;
+    }
+
+    .cat-menu {
+        text-align: center;
+        text-transform: uppercase;
+        border: 1px solid $ip-blue-lt;
+        border-left-width: 0px;
+        border-right-width: 0px;
+        margin: 8px 0;
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            display: inline-block;
+
+            &.active {
+                a {
+                    background-color: $ip-blue-lt;
+                }
+            }
+
+            a {
+                display: block;
+                padding: 8px 25px;
+                color: $black !important;
+                font-family: $helv-ext-thin;
+                letter-spacing: 0.1em;
+                @extend .no-underline;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    @media (min-width: $screen-lg) {
+        .cat-menu li a {
+            padding-left: 42px;
+            padding-right: 42px;
+        }
+    }
+
+    .charms-nav {
+        &, & > div {
+            position: absolute;
+        }
+
+        left: 0;
+        bottom: 130px;
+        width: 100%;
+
+        .nav {
+            &.prev {
+                top: 0;
+                left: 30px;
+            }
+
+            &.next {
+                left: auto;
+                right: 30px;
+            }
+
+            a {
+                font-size: 34px;
+                color: $ip-blue-lt;
+                @include transition(color .2s ease-out);
+                &:hover {
+                    color: $ip-blue-dk;
+                    text-decoration: none;
+                }
+                @extend .no-underline;
+            }
+        }
+    }
+
+    .charms-cont {
+        overflow-x: scroll;
+        position: relative;
+        //enough for subcat menu
+        padding-top: 60px;
+
+        &.loading-charms {
+            overflow-x: hidden;
+
+            .charms-inner {
+                //real big while charms are loading in
+                width: 15000px !important;
+            }
+        }
+
+        .charms-inner {
+            //get rid of inline-block whitespace
+            font-size: 0;
+        }
+    }
+
+    .charm {
+        position: relative;
+        display: none;
+        &.active {
+            display: inline-block;
+        }
+
+        border: 1px solid $white;
+        &:hover {
+            border: 1px solid $ip-blue-lt;
+        }
+
+        &.soldout,
+        &.disabled {
+            @include opacity(.3);
+        }
+
+        margin: 10px;
+        width: $charm-size;
+        height: $charm-size;
+        @include background-size(contain);
+        @include transition(opacity .2s ease-out);
+
+        .charm-bg {
+            width: 100%;
+            height: auto;
+            position: absolute;
+            top: 0; left: 0;
+        }
+    }
+
+
+    .charm-draggable {
+        width: $charm-size;
+        height: $charm-size;
+        @include opacity(0);
+        @include transition(opacity .3s ease-out);
+
+        &:hover {
+            cursor: url(../images/cursor-grab.png), auto;
+        }
+
+        //classes granted by $.draggable()
+        &.ui-draggable-dragging {
+            @include opacity(0.5);
+            cursor: url(../images/cursor-grabbing.png), auto;
+        }
+
+        &.ui-draggable-disabled {
+            cursor: not-allowed;
+        }
+
+        &.placed {
+            width: $charm-size*2;
+            height: $charm-size*2;
+            @include opacity(1);
+            @include transition(all .35s cubic-bezier(0.175, 0.885, 0.320, 1.275));
+            &:hover {
+                @include opacity(0.75);
+            }
+        }
+
+        &.reset {
+            //TODO: transition opacity isn't working in the new clone system.
+            @include opacity(0);
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}

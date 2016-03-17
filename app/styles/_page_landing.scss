@@ -1,0 +1,23 @@
+.page-landing-view {
+	height: 100%;
+	background: url(../images/landing-bg.jpg) 50% 0%;
+	@include background-size(cover);
+	text-align: center;
+
+	&:before {
+		@include verticalCenterParent();
+	}
+
+
+	.title {
+		margin: 0;
+		// font-size: 45px;
+	}
+	.subtitle {
+		margin: 8px 0 10px;
+		font-size: 18px;
+	}
+	a.btn {
+		margin: 10px 0;
+	}
+}

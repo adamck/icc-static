@@ -1,0 +1,45 @@
+.page-holder-view {
+	padding: 60px 120px 0;
+
+	.page-content {
+		padding: 60px 60px 0;
+	}
+
+	.holders {
+		width: 25%;
+		max-width: 300px;
+
+		.product {
+			padding: 20px;
+			margin-bottom: 0;
+			a {
+				//since we have no rollover image, change default .product style
+				&:hover,
+				&.active {
+					img {
+						border-color: $ip-blue-lt;
+					}
+				}
+			}
+		}
+	}
+
+	.form {
+		width: 75%;
+		text-align: center;
+		position: relative;
+
+		.form-holder {
+			position: absolute;
+			width: 180px;
+			height: 180px;
+			bottom: 70px;
+			left: 50%;
+			margin-left: -90px;
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+}

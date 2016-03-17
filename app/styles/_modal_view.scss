@@ -1,0 +1,31 @@
+.modal-view {
+	height: 100%;
+	text-align: center;
+	color: #808284;
+
+	&:before {
+		@include verticalCenterParent();
+	}
+
+	.modal-content {
+		background: $white;
+		border: 4px solid $ip-blue-lt;
+		padding: 20px 30px 30px;
+		min-width: 200px;
+		max-width: 400px;
+		margin-top: -200px;	//offset a bit
+		@include verticalCenterChild();
+
+        &.checkout-success {
+            max-width: 500px;
+
+            .btns {
+                & > .btn {
+                    display: inline-block;
+                    min-width: 285px;
+                    margin: 5px auto;
+                }
+            }
+        }
+	}
+}

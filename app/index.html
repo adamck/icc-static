@@ -1,0 +1,63 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>IPPOLITA Charm Creator</title>
+        <meta name="description" content="">
+        <!-- <meta name="viewport" content="width=device-width"> -->
+
+        <!-- build:css(.tmp) /styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+
+        <!-- build:js /scripts/vendor/modernizr.js -->
+        <script src="bower_components/yepnope/yepnope.js"></script>
+        <script src="bower_components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
+
+        <script type="text/javascript">
+            // give IE8 (cross-domain) media query support
+            yepnope({
+                test: Modernizr.mq('only all'),
+                nope: ['bower_components/respond/dest/respond.min.js']
+            });
+        </script>
+
+        <script type="text/javascript" src="http://fast.fonts.net/jsapi/b82a57fd-a2ba-4a7a-ba26-425fd03c905b.js"></script>
+    </head>
+
+    <body>
+        <!--[if lt IE 9]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div id="cb_cont">
+            <div class="modal-cont"></div>
+            <div class="header-cont"></div>
+            <div class="page-cont"></div>
+            <div class="footer-cont"></div>
+        </div>
+
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-50692704-1');
+            ga('send','pageview');
+        </script>
+
+        <!-- build:js /scripts/main.js -->
+        <script data-main="/scripts/main" src="bower_components/requirejs/require.js"></script>
+        <!-- endbuild -->
+
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min.js"></script>
+</body>
+</html>

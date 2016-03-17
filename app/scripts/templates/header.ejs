@@ -1,0 +1,34 @@
+<h2 class="tagline f-left">collect. curate. create.</h2>
+
+<div class="cart f-right">
+
+	<a href="#" class="btn buy-cta">review your creation (<%= cartProducts.length %>)</a>
+
+	<div class="dropdown">
+		<% var cp; %>
+		<% for(var i=0; i<cartProducts.length; i++) { cp = cartProducts[i]; %>
+			<div class="dropdown-item">
+				<p><%= cp.name %></p>
+				<p>$<%= cp.price %></p>
+			</div>
+		<% } %>
+		<div class="dropdown-item total">TOTAL: $<%= totalCost %></div>
+		<a href="#" class="btn large add-cart">add to bag</a>
+	</div>
+	
+	<div class="share-cont">
+		<h3 class="heavy">share your creation</h3>
+		<div class="share-ctas">
+			<a href="#" id="cta-fb" class="no-underline">
+				<span class="icon-facebook"></span>
+			</a>
+			<a href="#" id="cta-tw" class="no-underline">
+				<span class="icon-twitter"></span>
+			</a>
+			<a href="#" id="cta-pt" class="no-underline">
+				<span class="icon-pinterest"></span>
+			</a>
+		</div>
+	</div>
+
+</div>

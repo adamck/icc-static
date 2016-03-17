@@ -1,0 +1,41 @@
+<div class="modal-content <%=contentId%>">
+
+	<% switch(contentId) {
+		case "share": %>
+
+			<h2 class="large">please wait while we prepare your creation</h2>
+			<hr/>
+			It should only take a few more seconds
+
+		<% break;
+
+		case "checkout": %>
+
+			<h2 class="large">please wait while we add your creation to your shopping bag</h2>
+			<hr/>
+			It should only take a few more seconds
+
+		<% break;
+
+		case "checkout-success": %>
+
+			<h2 class="large">your charm creation has been added to your shopping bag</h2>
+			<hr/>
+            <div class="btns">
+                <a href="#" class="cta-continue btn">continue shopping</a><br/>
+                <a href="#" class="cta-start-over btn">start over</a><br/>
+                <a href="#" class="cta-checkout btn">checkout</a>
+            </div>
+
+		<% break;
+
+		case "checkout-error": %>
+
+			<h2 class="large">sorry, there was a problem adding your creation to your shopping bag</h2>
+			<hr/>
+			Please try again later or contact us for assistance.
+
+		<% break;
+	} %>
+
+</div>

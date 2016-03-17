@@ -1,0 +1,788 @@
+[
+	{
+		"name": "18K Gold Sculptural Metal Bangle Trio",
+		"type": "bracelet",
+		"sku": "886969261207",
+		"prod_id":"14380",
+		"price": "1595.00",
+		"slots": [
+			{
+				"x":451,
+				"y":39,
+				"rot":-147
+			},
+			{
+				"x":350,
+				"y":-5,
+				"rot":-169
+			},
+			{
+				"x":538,
+				"y":135,
+				"rot":-115
+			},
+			{
+				"x":557,
+				"y":250,
+				"rot":-83
+			},
+			{
+				"x":460,
+				"y":429,
+				"rot":-44
+			},
+			{
+				"x":358,
+				"y":490,
+				"rot":-17
+			},
+			{
+				"x":63,
+				"y":414,
+				"rot":45
+			},
+			{
+				"x":241,
+				"y":504,
+				"rot":6
+			},
+			{
+				"x":15,
+				"y":165,
+				"rot":117
+			},
+			{
+				"x":234,
+				"y":-2,
+				"rot":165
+			}
+		],
+		"images": {
+			"full": "images/bracelets/full/886969261207.jpg",
+			"thumb": "images/bracelets/thumbs/886969261207.jpg",
+			"thumb_detail": "images/bracelets/thumb-details/886969261207.jpg"
+		}
+	},
+	{
+		"name": "18K Gold Sculptural Metal Thin Bangle",
+		"type": "bracelet",
+		"sku": "855497107677",
+		"prod_id":"",
+		"price": "695.00",
+		"slots": [
+			{
+				"x":277,
+				"y":476,
+				"rot":0
+			},
+			{
+				"x":135,
+				"y":440,
+				"rot":28
+			},
+			{
+				"x":39,
+				"y":334,
+				"rot":65
+			},
+			{
+				"x":32,
+				"y":177,
+				"rot":112
+			},
+			{
+				"x":139,
+				"y":63,
+				"rot":152
+			},
+			{
+				"x":277,
+				"y":26,
+				"rot":180
+			},
+			{
+				"x":420,
+				"y":65,
+				"rot":-147
+			},
+			{
+				"x":509,
+				"y":165,
+				"rot":-116
+			},
+			{
+				"x":519,
+				"y":316,
+				"rot":-72
+			},
+			{
+				"x":423,
+				"y":436,
+				"rot":-32
+			}
+		],
+		"images": {
+			"full": "images/bracelets/full/855497107677.jpg",
+			"thumb": "images/bracelets/thumbs/855497107677.jpg",
+			"thumb_detail": "images/bracelets/thumb-details/855497107677.jpg"
+		}
+	},
+	{
+		"name": "Sterling Silver 3 Hammered Bangle Set",
+		"type": "bracelet",
+		"sku": "886969220280",
+		"prod_id":"14352",
+		"price": "295.00",
+		"slots": [
+			{
+				"x":291,
+				"y":498,
+				"rot":-1
+			},
+			{
+				"x":136,
+				"y":457,
+				"rot":28
+			},
+			{
+				"x":0,
+				"y":298,
+				"rot":77
+			},
+			{
+				"x":19,
+				"y":159,
+				"rot":117
+			},			
+			{
+				"x":277,
+				"y":-10,
+				"rot":176
+			},
+			{
+				"x":410,
+				"y":11,
+				"rot":-158
+			},
+			{
+				"x":515,
+				"y":95,
+				"rot":-125
+			},
+			{
+				"x":556,
+				"y":214,
+				"rot":-90
+			},
+			{
+				"x":435,
+				"y":456,
+				"rot":-32
+			}
+		],
+		"images": {
+			"full": "images/bracelets/full/886969220280.jpg",
+			"thumb": "images/bracelets/thumbs/886969220280.jpg",
+			"thumb_detail": "images/bracelets/thumb-details/886969220280.jpg"
+		}
+	},
+	{
+		"name": "Sterling Silver Round Link Bracelet",
+		"type": "bracelet",
+		"sku": "886969251420",
+		"prod_id":"14382",
+		"price": "495.00",
+		"slots": [
+			{
+				"x":282,
+				"y":534,
+				"rot":0
+			},
+			{
+				"x":135,
+				"y":512,
+				"rot":28
+			},
+			{
+				"x":23,
+				"y":389,
+				"rot":63
+			},
+			{
+				"x":-10,
+				"y":171,
+				"rot":108
+			},
+			{
+				"x":53,
+				"y":60,
+				"rot":127
+			},
+			{
+				"x":470,
+				"y":20,
+				"rot":-147
+			},
+			{
+				"x":557,
+				"y":166,
+				"rot":-100
+			},
+			{
+				"x":553,
+				"y":305,
+				"rot":-72
+			},
+			{
+				"x":429,
+				"y":482,
+				"rot":-29
+			}
+		],
+		"images": {
+			"full": "images/bracelets/full/886969251420.jpg",
+			"thumb": "images/bracelets/thumbs/886969251420.jpg",
+			"thumb_detail": "images/bracelets/thumb-details/886969251420.jpg"
+		}
+	},
+
+
+
+
+
+
+
+
+
+
+
+
+
+	{
+		"name": "18K Gold Thin Chain 16-18\"",
+		"type": "necklace",
+		"sku": "886969220051",
+		"prod_id":"14180",
+		"price": "995.00",
+		"charmHolder": true,
+		"slots": [
+			{
+				"x":300,
+				"y":357,
+				"rot":1
+			},
+			{
+				"x":241,
+				"y":350,
+				"rot":23,
+				"side":"left"
+			},
+			{
+				"x":358,
+				"y":350,
+				"rot":-23,
+				"side":"right"
+			},
+			{
+				"x":186,
+				"y":332,
+				"rot":46,
+				"side":"left"
+			},
+			{
+				"x":412,
+				"y":326,
+				"rot":-46,
+				"side":"right"
+			},
+			{
+				"x":132,
+				"y":300,
+				"rot":61,
+				"side":"left"
+			},
+			{
+				"x":462,
+				"y":290,
+				"rot":-61,
+				"side":"right"
+			}
+		],
+		"images": {
+			"full":"images/necklaces/full/886969220051.jpg",
+			"thumb":"images/necklaces/thumbs/886969220051.jpg",
+			"thumb_detail":"images/necklaces/thumb-details/886969220051.jpg"
+		}		
+	},
+	{
+		"name": "18K Gold Thick Chain 36\"",
+		"type": "necklace",
+		"sku": "886969220099",
+		"prod_id":"14182",
+		"price": "2795.00",
+		"charmHolder": true,
+		"slots": [
+			{
+				"x":300,
+				"y":360,
+				"rot":1
+			},
+			{
+				"x":241,
+				"y":353,
+				"rot":23,
+				"side":"left"
+			},
+			{
+				"x":358,
+				"y":353,
+				"rot":-23,
+				"side":"right"
+			},
+			{
+				"x":186,
+				"y":332,
+				"rot":46,
+				"side":"left"
+			},
+			{
+				"x":414,
+				"y":331,
+				"rot":-46,
+				"side":"right"
+			},
+			{
+				"x":132,
+				"y":300,
+				"rot":61,
+				"side":"left"
+			},
+			{
+				"x":467,
+				"y":299,
+				"rot":-61,
+				"side":"right"
+			}
+		],
+		"images": {
+			"full":"images/necklaces/full/886969220099.jpg",
+			"thumb":"images/necklaces/thumbs/886969220099.jpg",
+			"thumb_detail":"images/necklaces/thumb-details/886969220099.jpg"
+		}		
+	},
+
+
+
+	{
+		"name": "Sterling Silver Thin Chain 16-18\"",
+		"type": "necklace",
+		"sku": "886969220129",
+		"prod_id":"14354",
+		"price": "125.00",
+		"charmHolder": true,
+		"slots": [
+			{
+				"x":300,
+				"y":360,
+				"rot":1
+			},
+			{
+				"x":241,
+				"y":353,
+				"rot":23,
+				"side":"left"
+			},
+			{
+				"x":358,
+				"y":353,
+				"rot":-23,
+				"side":"right"
+			},
+			{
+				"x":185,
+				"y":330,
+				"rot":42,
+				"side":"left"
+			},
+			{
+				"x":413,
+				"y":327,
+				"rot":-42,
+				"side":"right"
+			},
+			{
+				"x":139,
+				"y":292,
+				"rot":61,
+				"side":"left"
+			},
+			{
+				"x":461,
+				"y":290,
+				"rot":-61,
+				"side":"right"
+			}
+		],
+		"images": {
+			"full":"images/necklaces/full/886969220129.jpg",
+			"thumb":"images/necklaces/thumbs/886969220129.jpg",
+			"thumb_detail":"images/necklaces/thumb-details/886969220129.jpg"
+		}		
+	},
+
+	{
+		"name": "Sterling Silver Thick Chain 16-18\"",
+		"type": "necklace",
+		"sku": "886969220167",
+		"prod_id":"14356",
+		"price": "150.00",
+		"charmHolder": true,
+		"slots": [
+			{
+				"x":300,
+				"y":357,
+				"rot":1
+			},
+			{
+				"x":241,
+				"y":351,
+				"rot":23,
+				"side":"left"
+			},
+			{
+				"x":358,
+				"y":353,
+				"rot":-23,
+				"side":"right"
+			},
+			{
+				"x":189,
+				"y":321,
+				"rot":42,
+				"side":"left"
+			},
+			{
+				"x":411,
+				"y":325,
+				"rot":-42,
+				"side":"right"
+			},
+			{
+				"x":141,
+				"y":280,
+				"rot":61,
+				"side":"left"
+			},
+			{
+				"x":459,
+				"y":285,
+				"rot":-56,
+				"side":"right"
+			}
+		],
+		"images": {
+			"full":"images/necklaces/full/886969220167.jpg",
+			"thumb":"images/necklaces/thumbs/886969220167.jpg",
+			"thumb_detail":"images/necklaces/thumb-details/886969220167.jpg"
+		}		
+	},
+
+	{
+		"name": "Sterling Silver Thin Chain 36\"",
+		"type": "necklace",
+		"sku": "886969220174",
+		"prod_id":"14358",
+		"price": "175.00",
+		"charmHolder": true,
+		"slots": [
+			{
+				"x":300,
+				"y":360,
+				"rot":1
+			},
+			{
+				"x":241,
+				"y":353,
+				"rot":23,
+				"side":"left"
+			},
+			{
+				"x":358,
+				"y":353,
+				"rot":-23,
+				"side":"right"
+			},
+			{
+				"x":188,
+				"y":330,
+				"rot":46,
+				"side":"left"
+			},
+			{
+				"x":414,
+				"y":331,
+				"rot":-46,
+				"side":"right"
+			},
+			{
+				"x":135,
+				"y":297,
+				"rot":61,
+				"side":"left"
+			},
+			{
+				"x":467,
+				"y":299,
+				"rot":-61,
+				"side":"right"
+			}
+		],
+		"images": {
+			"full":"images/necklaces/full/886969220174.jpg",
+			"thumb":"images/necklaces/thumbs/886969220174.jpg",
+			"thumb_detail":"images/necklaces/thumb-details/886969220174.jpg"
+		}		
+	},
+
+	{
+		"name": "Sterling Silver Oval Link Chain 36\"",
+		"type": "necklace",
+		"sku": "886969220198",
+		"prod_id":"14360",
+		"price": "200.00",
+		"charmHolder": true,
+		"slots": [
+			{
+				"x":300,
+				"y":355,
+				"rot":1
+			},
+			{
+				"x":241,
+				"y":348,
+				"rot":23,
+				"side":"left"
+			},
+			{
+				"x":358,
+				"y":348,
+				"rot":-23,
+				"side":"right"
+			},
+			{
+				"x":188,
+				"y":322,
+				"rot":46,
+				"side":"left"
+			},
+			{
+				"x":414,
+				"y":323,
+				"rot":-46,
+				"side":"right"
+			},
+			{
+				"x":141,
+				"y":285,
+				"rot":61,
+				"side":"left"
+			},
+			{
+				"x":464,
+				"y":289,
+				"rot":-61,
+				"side":"right"
+			}
+		],
+		"images": {
+			"full":"images/necklaces/full/886969220198.jpg",
+			"thumb":"images/necklaces/thumbs/886969220198.jpg",
+			"thumb_detail":"images/necklaces/thumb-details/886969220198.jpg"
+		}		
+	},
+
+
+
+	{
+		"name": "Sterling Silver Charm Catcher Necklace 36\"",
+		"type": "necklace",
+		"sku": "886969225483",
+		"prod_id":"14350",
+		"price": "195.00",
+		"charmHolder": false,
+		"falseConstraint": "holder",
+		"slots": [
+			{
+				"x":302,
+				"y":360,
+				"rot":0				
+			},
+			{
+				"x":272,
+				"y":352,
+				"rot":20,
+				"side":"left"	
+			},
+			{
+				"x":332,
+				"y":352,
+				"rot":-20,
+				"side":"right"
+			},
+			{
+				"x":245,
+				"y":332,
+				"rot":42,
+				"side":"left"	
+			},
+			{
+				"x":359,
+				"y":332,
+				"rot":-42,
+				"side":"right"		
+			}
+		],
+		"images": {
+			"full":"images/necklaces/full/886969225483.jpg",
+			"thumb":"images/necklaces/thumbs/886969225483.jpg",
+			"thumb_detail":"images/necklaces/thumb-details/886969225483.jpg"
+		}		
+	},
+
+	{
+		"name": "Sterling Silver Pavé Diamond Charm Catcher Necklace 36\"",
+		"type": "necklace",
+		"sku": "886969225490",
+		"prod_id":"14348",
+		"price": "895.00",
+		"charmHolder": false,
+		"falseConstraint": "holder",
+		"slots": [
+			{
+				"x":302,
+				"y":360,
+				"rot":0				
+			},
+			{
+				"x":272,
+				"y":352,
+				"rot":20,
+				"side":"left"	
+			},
+			{
+				"x":332,
+				"y":352,
+				"rot":-20,
+				"side":"right"		
+			},
+			{
+				"x":245,
+				"y":332,
+				"rot":42,
+				"side":"left"	
+			},
+			{
+				"x":359,
+				"y":332,
+				"rot":-42,
+				"side":"right"		
+			}
+		],
+		"images": {
+			"full":"images/necklaces/full/886969225490.jpg",
+			"thumb":"images/necklaces/thumbs/886969225490.jpg",
+			"thumb_detail":"images/necklaces/thumb-details/886969225490.jpg"
+		}		
+	},
+
+
+
+
+
+
+	{
+		"name":"18K Gold Twisted Charm Catcher",
+		"type":"holder",
+		"prod_id":"14160",
+		"price": "995.00",
+		"sku":"886969212629",		
+		"slots": [
+			{
+				"x":90,
+				"y":108,
+				"rot":0				
+			},
+			{
+				"x":55,
+				"y":100,
+				"rot":20,
+				"side":"left"	
+			},
+			{
+				"x":125,
+				"y":100,
+				"rot":-20,
+				"side":"right"		
+			},
+			{
+				"x":24,
+				"y":80,
+				"rot":42,
+				"side":"left"	
+			},
+			{
+				"x":156,
+				"y":80,
+				"rot":-42,
+				"side":"right"		
+			}
+		],
+		"images":{
+			"thumb":"images/holders/thumbs/886969212629.png",
+			"thumb_detail":"images/holders/thumb-details/886969212629.jpg"
+		}
+	},
+	{
+		"name":"18K Gold Pavé Diamond Charm Catcher",
+		"type":"holder",
+		"sku":"886969203474",
+		"prod_id":"14162",
+		"price": "1795.00",		
+		"slots": [
+			{
+				"x":90,
+				"y":108,
+				"rot":0				
+			},
+			{
+				"x":55,
+				"y":100,
+				"rot":20,
+				"side":"left"	
+			},
+			{
+				"x":125,
+				"y":100,
+				"rot":-20,
+				"side":"right"		
+			},
+			{
+				"x":24,
+				"y":80,
+				"rot":42,
+				"side":"left"	
+			},
+			{
+				"x":156,
+				"y":80,
+				"rot":-42,
+				"side":"right"		
+			}
+
+		],
+		"images":{
+			"thumb":"images/holders/thumbs/886969203474.png",
+			"thumb_detail":"images/holders/thumb-details/886969203474.jpg"
+		}
+	}
+]

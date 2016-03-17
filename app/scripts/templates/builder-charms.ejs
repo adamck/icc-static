@@ -1,0 +1,18 @@
+<% var c;
+   for(var i=0; i<charms.length; i++) { c = charms[i]; %>
+
+	<div class="charm cat-<%=c.cat.id%> subcat-<%=c.subcat.id%> <%=c.available ? '' : 'soldout'%>" 
+		 data-charm-sku="<%=c.sku%>"
+		 data-tooltip-name="<%=c.name%>"
+		 data-tooltip-price="<%=c.price%>">
+		 
+		 <img src="<%=c.images.thumb%>" class="charm-bg" />
+
+		<% if(c.available) { %>
+			<div class="charm-draggable original" data-charm-sku="<%=c.sku%>" data-charm-id="<%=getUid()%>">
+				<img src="<%=c.images.thumb%>" alt="<%=c.name%>">
+			</div>
+		<% } %>
+	
+	</div>
+<% } %>

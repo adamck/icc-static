@@ -1,0 +1,35 @@
+<div class="form" id="share_container"></div>
+
+<div class="charms">
+
+	<!-- optional subcategory dropdown -->
+	<div class="subcat-menu"></div>	
+
+	<!-- next/prev controls -->
+	<div class="charms-nav">
+		<div class="nav prev">
+			<a HREF="#"><span class="icon-arrow-left"></span></a>
+		</div>
+		<div class="nav next">
+			<a HREF="#"><span class="icon-arrow-right"></span></a>
+		</div>
+	</div>
+
+	<div class="charms-cont">
+		<div class="charms-inner"></div>
+	</div>
+	
+	<!-- category menu -->
+	<div class="cat-menu">
+		<ul>
+			<% for(var i=0; i<cats.length; i++) { %>
+				<li class="<%= (i==0) ? 'active' : '' %>">
+					<a href="#<%=cats[i].id%>"><%=cats[i].label%></a>
+				</li>
+			<% } %>
+		</ul>
+	</div>
+
+</div>
+
+<div class="tooltips"></div>

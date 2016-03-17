@@ -1,0 +1,13 @@
+/** Style optimizations for touch devices **/
+
+.btn:hover {
+    color: $white !important;
+    background-color: $ip-blue-dk !important;
+}
+
+.builder-view {
+    .charm:hover {
+        //don't use the blue border hover effect
+        border: 1px solid $white !important;
+    }
+}

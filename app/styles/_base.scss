@@ -1,0 +1,281 @@
+*, :before, :after {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+
+a {
+	color: $black;
+	&:hover {
+		color: $ip-blue-dk;
+	}
+
+	&.no-underline {
+		&, &:hover {
+			text-decoration: none;
+		}
+	}
+
+	&, &:visited, &:focus {
+		outline: 0;
+		color: $black;
+	}
+
+}
+
+html, body {
+	height: 100%;
+}
+body {
+    background: $white;
+    color: $black;
+
+    /* Better Font Rendering =========== */
+	-webkit-font-smoothing: subpixel-antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+
+h1,h2,h3,h4,h5,h6 {
+	text-transform: uppercase;
+	font-family: $helv-ext-thin;
+	font-weight: normal;
+}
+h1 {
+	font-size: 45px;
+	letter-spacing: 0.03em;
+	font-family: $helv-ext-ultra-lt;
+}
+h2 {
+	font-size: 15px;
+    letter-spacing: 0.02em;
+	&.large {
+		font-size: 20px;
+	}
+}
+h3 {
+	font-size: 16px;
+	letter-spacing: 0.1em;
+	&.heavy {
+		font-family: $helv-ext-md;
+		font-size: 14px;
+		letter-spacing: 0.01em;
+	}
+}
+h4 {
+	font-family: $helv-ext-lt;
+	font-size: 12px;
+	letter-spacing: 0.03em;
+	text-transform: none;
+}
+
+
+hr {
+	color: $ip-grey;
+	border-color: $ip-grey;
+	text-align: center;
+	width: 50%;
+	&:after {
+		content: "\2666";
+		display: inline-block;
+		position: relative;
+		top: -0.8em;
+		font-size: 1.2em;
+		background: transparent;
+	}
+}
+
+
+.browsehappy {
+	text-align: center;
+	background-color: #aaa;
+}
+
+
+
+.no-underline {
+	&:active,
+	&:visited,
+	&:focus {
+		//for FF
+		text-decoration: none;
+	}
+}
+
+
+// instead of using &trade; in html
+.char-trade:after {
+	content: "\2122";
+	font-size: 0.6em;
+	line-height: 1.9em;
+	vertical-align: top;
+}
+
+
+.btn {
+	display: inline-block;
+	background-color: $ip-blue-dk;
+	padding: 8px 40px;
+	color: $white;
+	font-size: 14px;
+	font-family: $helv-ext-md;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	text-align: center;
+
+	@include transition(all .2s ease-out);
+
+	&:visited, &:focus {
+		color: $white;
+		text-decoration: none;
+	}
+
+	&:hover {
+		color: $ip-blue-dk;
+		text-decoration: none;
+		background-color: $ip-blue-lt;
+	}
+
+
+	&.disabled {
+		@include opacity(0.5);
+		&:hover {
+			//no effect
+			color: $white;
+			background-color: $ip-blue-dk;
+		}
+	}
+
+	&.large {
+		// like add to cart
+		padding-top: 14px;
+		padding-bottom: 14px;
+	}
+
+	&.alt {
+		//footer btns with a span icon
+		vertical-align: top;
+		background-color: transparent;
+		padding: 8px 20px;
+		color: $ip-grey;
+		&:hover {
+			color: $ip-blue-dk;
+			text-decoration: none;
+			span {
+				color: $ip-blue-dk;
+			}
+		}
+		span {
+			@include transition(color .2s ease-out);
+			font-size: 18px;
+			color: $ip-blue-lt;
+		}
+	}
+}
+
+
+.btn-icon {
+	display: inline-block;
+	padding: 8px 20px;
+	color: $ip-blue-lt;
+	font-size: 14px;
+	text-transform: uppercase;
+
+	@include transition(all .2s ease-out);
+
+	&:hover {
+		color: $ip-blue-dk;
+		text-decoration: none;
+	}
+}
+
+
+
+.page-content {
+	width: 100%;
+	padding: 0px 120px;
+}
+
+
+// product grid items
+// used by Forms and Holders
+.product {
+	margin-bottom: 20px;
+	text-align: center;
+
+	&.soldout {
+		@include opacity(0.3);
+	}
+
+	a {
+		display: block;
+		position: relative;
+		&:hover,
+		&.active {
+			text-decoration: none;
+			img.rollover {
+				-webkit-backface-visibility: hidden;
+				@include opacity(1);
+			}
+		}
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+		border: 1px solid transparent;
+		&.rollover {
+			position: absolute;
+			top: 0; left: 0;
+			z-index: 1;
+			border-color: $ip-blue-lt;
+			@include transition(opacity .2s ease-out);
+			@include opacity(0);
+		}
+	}
+	.name {
+		margin-bottom: 0;
+	}
+	.price {
+		margin: 0;
+		color: $ip-grey;
+	}
+}
+
+
+
+
+.vcenter-parent:before {
+	@include verticalCenterParent();
+}
+.vcenter-child {
+	@include verticalCenterChild();
+}
+
+
+.fixed-aside {
+	position: absolute;
+	top: 110px;
+	left: $page-gutter-x;
+	z-index: 10;
+}
+
+
+
+.img-resp {
+	width: 100%;
+	height: auto;
+}
+
+.f-right {
+	float: right;
+}
+.f-left {
+	float: left;
+}
+
+.centered {
+	text-align: center;
+}

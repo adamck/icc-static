@@ -1,0 +1,95 @@
+.header-view {
+	.tagline {
+		margin-left: $page-gutter-x;
+		font-size: 18px;
+	}
+
+	$cart-cta-h: 30px;
+	$zindex-dropdown: 9;
+	$zindex-buy-cta: 10;
+
+	.cart {
+		position: absolute;
+		top: 0;
+		right: 45px; //$page-gutter-x;
+		z-index: $zindex-popover;
+
+		//width of entire cart / share area
+		width: 300px;
+		height: $cart-cta-h;
+
+		.btn {
+			width: 100%;
+			text-align: center;
+			//adj padding now that this button copy got super long
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+
+	.buy-cta {
+		position: absolute;
+		z-index: $zindex-buy-cta;
+	}
+
+	.dropdown {
+		visibility: hidden;
+		top: 0px;
+		@include transition(all .2s ease-out);
+		@include opacity(0);
+		&.active {
+			visibility: visible;
+			top: $cart-cta-h;
+			@include opacity(1);
+		}
+
+		position: absolute;
+		width: 100%;
+		z-index: $zindex-dropdown;
+		border: 1px solid $ip-blue-lt;
+	}
+
+	.dropdown-item {
+		border-top: 1px solid $ip-blue-lt;
+		background-color: $white;
+		width: 100%;
+		text-align: left;
+		padding: 10px 20px;
+
+		&.total {
+			text-align: right;
+		}
+
+		p {
+			margin: 2px 0;
+		}
+	}
+
+
+	.share-cont {
+		margin-top: 70px;
+		text-align: center;
+		.share-ctas {
+			margin-top: -5px;
+			border-top: 1px solid $ip-blue-dk;
+			font-size: 0;
+			a {
+				font-size: 22px;
+				display: inline-block;
+				color: $ip-grey;
+				margin: 8px 6px 0;
+				//give a bigger target
+				width: 40px; height: 30px;
+
+				@include transition(color .2s ease-out);
+				&:hover {
+					color: $ip-blue-dk;
+				}
+
+				span {
+					vertical-align: middle;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,10 @@
+.page-charms-view {
+	padding-top: 0px;
+
+	.charm-count-info {
+		color: $ip-grey;
+		margin: 20px 0;
+	}
+
+	@import "_builder";
+}

@@ -1,0 +1,75 @@
+<div class="fixed-aside">
+	Choose a necklace or bracelet
+</div>
+
+
+<div class="page-content">
+
+	<!--<div class="f-right">
+		<a href="#" class="next btn disabled">next</a>
+	</div>-->
+
+
+	<div class="grids">
+
+		<!-- necklace grid -->
+		<h3 class="centered">necklaces</h3>
+		<div class="products row">
+
+			<%var p;%>
+			<% for(var i=0; i<necklaces.length; i++) { p = necklaces[i]; %>
+
+				<div class="product col-sm-3 <%= p.available ? '' : 'soldout' %>">
+
+					<% if(p.available) { %>
+						<a href="#" data-form-sku="<%= p.sku %>">
+					<% } %>
+						<img src="<%= p.images.thumb %>" />
+						<img src="<%= p.images.thumb_detail %>" class="rollover" />
+						<h4 class="name"><%= p.name %></h4>
+						<h5 class="price">$<%= p.price %></h5>
+					<% if(p.available) { %>
+						</a>
+					<% } %>
+
+				</div>
+
+			<% } %>
+
+		</div>
+
+		<!-- bracelet grid -->
+		<h3 class="centered">bracelets</h3>
+		<div class="products row">
+
+			<% for(i=0; i<bracelets.length; i++) { p = bracelets[i]; %>
+
+				<div class="product col-sm-3 <%= p.available ? '' : 'soldout' %>">
+
+					<% if(p.available) { %>
+						<a href="#" data-form-sku="<%= p.sku %>">
+					<% } %>
+						<img src="<%= p.images.thumb %>" />
+						<img src="<%= p.images.thumb_detail %>" class="rollover" />
+						<h4 class="name"><%= p.name %></h4>
+						<h5 class="price">$<%= p.price %></h5>
+					<% if(p.available) { %>
+						</a>
+					<% } %>
+
+				</div>
+
+			<% } %>
+
+		</div>
+
+	</div>
+
+	<!--<div class="f-right">
+		<a href="#" class="next btn disabled">next</a>
+	</div>-->
+
+
+	<div class="clearfix"></div>
+
+</div>

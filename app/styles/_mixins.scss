@@ -1,0 +1,37 @@
+/** use the :before pseudo selector on the parent and include this **/
+@mixin verticalCenterParent() {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em; /* Adjusts for spacing */
+}
+@mixin verticalCenterChild() {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@mixin background-size($size) {
+	-webkit-background-size: $size;
+	-moz-background-size: $size;
+	-o-background-size: $size;
+	background-size: $size;
+
+    /* The url is relative to the document, not to the css file! */
+    /* Prefer absolute urls to avoid confusion. */
+    -ms-behavior: url(/styles/backgroundsize.min.htc);
+}
+
+@mixin svgBackground($bgNamePath) {
+    background-image: url($bgNamePath + '.png');
+    background-image: url($bgNamePath + '.svg'), none;
+}
+
+@mixin grayscale($pct) {
+    -webkit-filter: grayscale($pct);
+    -moz-filter: grayscale($pct);
+    -ms-filter: grayscale($pct);
+    -o-filter: grayscale($pct);
+    filter: grayscale($pct);
+}
+
